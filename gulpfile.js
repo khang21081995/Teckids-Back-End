@@ -32,17 +32,17 @@ gulp.task("run", function(cb){
 	});
 });
 
-gulp.task('compile-jade', function() {
-  gulp.src('./src/jade/*.jade')
-    .pipe(jade())
-    .pipe(gulp.dest('./client/'))
-});
-
-gulp.task('compile-sass', function () {
-   return gulp.src('./src/sass/*.scss')
-      .pipe(sass())
-      .pipe(gulp.dest('./client/css/'))
-});
+// gulp.task('compile-jade', function() {
+//   gulp.src('./src/jade/*.jade')
+//     .pipe(jade())
+//     .pipe(gulp.dest('./client/'))
+// });
+//
+// gulp.task('compile-sass', function () {
+//    return gulp.src('./src/sass/*.scss')
+//       .pipe(sass())
+//       .pipe(gulp.dest('./client/css/'))
+// });
 
 gulp.task('apidoc', function(done){
           apidoc({
